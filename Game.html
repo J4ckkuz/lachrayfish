@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> The Crayfish Game </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+    <script src="Bootstrap/jquery-1.11.3.min.js"></script>
+    <script src="Bootstrap/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="TCG.css">
+
+
+
+</head>
+<body>
+    <div class="container" align="center">
+    <h3>The Crayfish Game</h3>
+
+    <div id="chartdiv" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
+
+        <br><br>
+        <div class="container-sm-3"><p>The weather yesterday was <code id="weather"></code> </p></div>
+        <div class="container-sm-3"> <p>You currently have $ <code id="money"></code></p></div>
+        <div class="container-sm-3"> <p> You have <code id="boats"></code> boats.</p></div>
+    <div class="container-sm-3"> <p> You have <code id="pots"></code> pots</p></div>
+
+        <br>
+
+        <button id="buyBoats" onclick="buyBoats()"> Buy Boats</button>
+        <button id="buyPots" onclick="buyPots()"> Buy Cray Pots</button>
+
+        <br>
+        <br>
+
+        <p> Pots Coastal <input type="number" id="idCoastal" step="1" value="1"></p>
+        <p> Pots Deep Sea <input type="number" id="idDeepSea" step="1" value="1"> </p>
+
+        <br>
+
+        <button id="setPots" onclick="setPots()"> Set your cray pots and go to the next day!</button>
+
+        <br>
+        <br>
+
+        <p> Pots Coastal <code id="potsC"></code></p>
+        <p> Pots Deep Sea <code id="potsD"></code> boats.</p>
+        <p> Pots not used <code id="potsS"></code> pots</p>
+
+    </div>
+    <div id="console">
+
+    </div>
+
+    <script src="Game.js"></script>
+</body>
+
+</html>

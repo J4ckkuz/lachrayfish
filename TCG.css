@@ -1,0 +1,33 @@
+body {
+    background-color: seashell;
+}
+
+
+
+button {
+    position: relative;
+    margin-top: 20px;
+    line-height: 60px;
+    font-weight: bold;
+    padding: 0 40px;
+    background: salmon;
+    border: none;
+}
+
+
+button:hover {
+    background: lightsalmon;
+}
+
+#console {
+    font-size: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1em;
+    text-align: center;
+    background-color: lightseagreen;
+    color: white;
+    font-family: courier;
+}
